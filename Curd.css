@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #222;
+    color: #fff;
+    font-family: system-ui;
+}
+.crud{
+    width: 80%;
+    margin: auto;
+}
+.head{
+    text-align: center;
+    margin: 10px 0;
+}
+input{
+    width: 100%;
+    height: 30px;
+    background-color: #111;
+    outline: none;
+    border: none;
+    margin: 4px 0;
+    border-radius: 7px;
+    padding: 4px;
+    color: white;
+    transition: 0.5s;
+}
+input:focus{
+    background-color: #000;
+    letter-spacing: 2px;
+    transform: scale(1.03);
+}
+
+.price input{
+    width: 20%;
+}
+#total{
+    background-color: #ff8c00;
+    padding: 5px 2px;
+    border-radius: 4px;
+}
+#total:before{
+    content: 'Total: ';
+}
+.CreatBtn , #deleteall{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#submit , #deleteall button{
+    width: 80%;
+    height: 35px;
+    border: 4px;
+    background-color: #1100ff;
+    color: white;
+    border-radius: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+#submit:hover{
+    transform: scale(0.9);
+    background-color: rgb(0, 170, 255);
+    letter-spacing: 0;
+}
+.btnSearch{
+    display: flex;
+    justify-content: space-between;
+}
+
+#searchTitle , #searchCategory{
+    width: 45%;
+    height: 35px;
+    border: 4px;
+    background-color: #1100ff;
+    color: white;
+    border-radius: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+#searchTitle:hover , #searchCategory:hover{
+    transform: scale(0.9);
+    background-color: rgb(0, 170, 255);
+    letter-spacing: 0;
+}
+table{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+table th{
+    text-transform: uppercase;
+}
+th , td{
+    padding: 5px;
+}
+#update , #delete{
+    background-color: #ff0000;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    height: 25px;
+    width: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#update:hover , #delete:hover{
+    transform: scale(1.1);
+    background-color: rgb(255, 111, 0);
+    letter-spacing: 0;
+}
+#deleteall{
+    margin: 15px 0;
+}
+#deleteall button{
+    width: 250px;
+    background-color: #ff0000;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#deleteall button:hover{
+    transform: scale(1.1);
+    background-color: rgb(255, 111, 0);
+}
